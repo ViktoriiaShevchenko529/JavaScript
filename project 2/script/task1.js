@@ -1,36 +1,7 @@
-// let date = new Date('Jan 1 2021 00:00:00');
-// let timer_show = document.getElementById("timer");
-// function diffSubtract(date1, date2) {
-//     return date2 - date1;
-// }
-// let end_date = {
-//     "full_year": "2022", // Год
-//     "month": "01", // Номер месяца
-//     "day": "01", // День
-//     "hours": "00", // Час
-//     "minutes": "00", // Минуты
-//     "seconds": "00" // Секунды
-// }
-// let end_date_str = `${end_date.full_year}-${end_date.month}-${end_date.day}T${end_date.hours}:${end_date.minutes}:${end_date.seconds}`;
 
-// timer = setInterval(function () {
-//     let now = new Date();
-
-//     let date = new Date(end_date_str);
-//     let ms_left = diffSubtract(now, date);
-//     if (ms_left <= 0) {
-//         clearInterval(timer);
-//         alert("Time is up");
-//     } else {
-    
-//         let res = new Date(ms_left);
-//         let str_timer = `${res.getUTCFullYear() - 1970}.${res.getUTCMonth()}.${res.getUTCDate() - 1} ${res.getUTCHours()}:${res.getUTCMinutes()}:${res.getUTCSeconds()}`;
-//         timer_show.innerHTML = str_timer;
-//     }
-// }, 1000)
 
 function countdown(dateEnd) {
-    var timer, days, hours, minutes, seconds;
+    let timer, days, hours, minutes, seconds;
    
     dateEnd = new Date(dateEnd);
     dateEnd = dateEnd.getTime();
@@ -42,8 +13,8 @@ function countdown(dateEnd) {
     timer = setInterval(calculate, 1000);
    
     function calculate() {
-      var dateStart = new Date();
-      var dateStart = new Date(dateStart.getUTCFullYear(),
+      let dateStart = new Date();
+      let dateStart = new Date(dateStart.getUTCFullYear(),
                                dateStart.getUTCMonth(),
                                dateStart.getUTCDate(),
                                dateStart.getUTCHours(),
