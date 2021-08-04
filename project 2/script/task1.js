@@ -20,7 +20,7 @@ function countdown(dateEnd) {
                                dateStart.getUTCHours(),
                                dateStart.getUTCMinutes(),
                                dateStart.getUTCSeconds());
-      var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
+      let timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
    
       if ( timeRemaining >= 0 ) {
         days    = parseInt(timeRemaining / 86400);
